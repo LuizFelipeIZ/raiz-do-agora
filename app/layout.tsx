@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Cafés Especiais Muzambinho | Raiz do Agora",
-  description: "GConheça a essência, as histórias e os microlotes exclusivos das famílias produtoras de café especial da região de Muzambinho - MG.",
+  description: "Conheça a essência, as histórias e os microlotes exclusivos das famílias produtoras de café especial da região de Muzambinho - MG.",
 };
 
 export default function RootLayout({
