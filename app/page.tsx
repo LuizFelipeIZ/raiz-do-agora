@@ -190,7 +190,6 @@ const produtores = [
 // ==========================================
 // 🤝 ÁREA DE DADOS (PATROCINADORES E APOIADORES)
 // ==========================================
-// Removi as descrições dos patrocinadores para igualar as caixas
 const listaPatrocinadores = [
   { id: 1, nome: "Moderna", logo_url: "/patrocinadores/moderna.jpg" },
   { id: 2, nome: "Fruti Bom", logo_url: "/patrocinadores/fruit_bom.jpg" },
@@ -207,7 +206,6 @@ const listaPatrocinadores = [
 const listaApoiadores = [
   { id: 7, nome: "IFSULDEMINAS", logo_url: "/patrocinadores/logo_if.jpg" },
   { id: 9, nome: "SPR Muzambinho", logo_url: "/patrocinadores/spr_muz.jpg" },
-  { id: 11, nome: "Raiz do Agora", logo_url: "/patrocinadores/rai_do_agora.jpg" },
   { id: 14, nome: "FAEMG SENAR", logo_url: "/patrocinadores/faemg_senar.jpg" },
   { id: 15, nome: "Maratona FAEMG", logo_url: "/patrocinadores/maratona_faemg.jpg" }
 ];
@@ -241,28 +239,28 @@ export default function Home() {
       
       {/* HEADER */}
       <header className="flex flex-col xl:flex-row justify-between items-center py-5 px-6 md:px-12 bg-[#F4EFE8] sticky top-0 z-50 shadow-sm border-b border-[#e1d5c1]">
-        {/* LOGO COM A PLANTINHA */}
-        <div className="flex items-center gap-3 mb-4 xl:mb-0">
-          <svg className="w-8 h-8 text-[#1B2F20]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2zM12 16c2.5 0 4.5-2 4.5-4.5 0 0-2 0-4.5 2z" />
-          </svg>
-          <h1 className="text-xl font-bold tracking-tight text-[#1B2F20] leading-tight">
-            RAIZ DO<br/>AGORA
-          </h1>
-        </div>
+        
+        {/* LOGO OFICIAL MAIOR AINDA */}
+        <a href="#inicio" className="flex items-center mb-4 xl:mb-0">
+          <img 
+            src="/patrocinadores/rai_do_agora.jpg" 
+            alt="Logo Raiz do Agora" 
+            className="h-20 md:h-28 w-auto object-contain mix-blend-multiply hover:scale-105 transition-transform" 
+          />
+        </a>
 
-        {/* NAVEGAÇÃO */}
+        {/* NAVEGAÇÃO - Removida a aba "NOTÍCIAS" */}
         <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[11px] font-bold tracking-widest uppercase text-[#333333]">
-          <a href="#inicio" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">Início</a>
-          <a href="#produtores" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">Produtores</a>
-          <a href="#sobre" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">Sobre o Projeto</a>
-          <a href="#patrocinadores" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">Patrocinadores</a>
-          <a href="#contato" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">Contato</a>
+          <a href="#inicio" className="text-[#1B2F20] pb-1 border-b-2 border-[#1B2F20]">INÍCIO</a>
+          <a href="#produtores" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">PRODUTORES</a>
+          <a href="#sobre" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">SOBRE O PROJETO</a>
+          <a href="#patrocinadores" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">PATROCINADORES</a>
+          <a href="#contato" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">CONTATO</a>
         </nav>
 
-        {/* BOTÃO AÇÃO NO TOPO À DIREITA (TBM COM A PLANTINHA) */}
-        <a href="#produtores" className="hidden xl:inline-flex items-center gap-2 bg-[#1B2F20] text-[#F4EFE8] px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-[#284630] transition-colors">
-          Conheça os Produtores
+        {/* BOTÃO AÇÃO NO TOPO À DIREITA */}
+        <a href="#produtores" className="hidden xl:inline-flex items-center gap-2 bg-[#2D4A33] text-[#F4EFE8] px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#1B2F20] transition-colors">
+          CONHEÇA OS PRODUTORES
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6z" />
           </svg>
@@ -270,65 +268,95 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <section id="inicio" className="relative bg-[#1B2F20] text-[#F4EFE8] overflow-hidden">
-        <div className="absolute top-0 right-0 w-full lg:w-2/3 h-full opacity-40 lg:opacity-80 mask-image-gradient">
+      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a120d]">
+        {/* IMAGEM DE FUNDO E DEGRADÊ */}
+        <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
-            className="object-cover w-full h-full"
-            alt="Plantação de café em Muzambinho" 
+            src="/hero-bg.jpg" 
+            className="w-full h-full object-cover object-center"
+            alt="Produtor de café observando a plantação no pôr do sol" 
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1B2F20] via-[#1B2F20]/80 to-transparent hidden lg:block"></div>
+          {/* Degradê escuro da esquerda para a direita para dar leitura ao texto */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#08120a] via-[#08120a]/80 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-32 flex flex-col items-start lg:w-3/5">
-          <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-10">
+          <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block">
             NOSSO PROPÓSITO
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-[1.1] mb-6">
-            Conectamos histórias,<br/>valorizamos origens.
+          
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6">
+            <span className="text-white">Conectamos<br/>histórias,</span><br/>
+            <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
           </h2>
-          <p className="text-base md:text-lg text-gray-300 mb-10 leading-relaxed max-w-lg">
-            O Raiz do Agora é um projeto que dá voz aos produtores de cafés especiais do Sul de Minas, contando suas histórias, valorizando suas origens e aproximando pessoas através de cada xícara.
+          
+          {/* Linha decorativa com a plantinha dourada */}
+          <div className="flex items-center gap-4 mb-6">
+            <hr className="w-12 border-[#C89F53]" />
+            <svg className="w-5 h-5 text-[#C89F53]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2z" />
+            </svg>
+            <hr className="w-12 border-[#C89F53]" />
+          </div>
+
+          <p className="text-base md:text-lg text-gray-200 mb-10 leading-relaxed max-w-lg">
+            O Raiz do Agora dá voz aos produtores de cafés especiais do Sul de Minas, valorizando suas histórias, tradições e o cuidado em cada xícara.
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-[#F4EFE8] px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-[#B89247] transition-all">
+            <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-              Conheça os Produtores
+              CONHEÇA OS PRODUTORES
             </a>
-            <a href="#sobre" className="inline-flex items-center gap-2 border border-[#F4EFE8] text-[#F4EFE8] px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-[#F4EFE8] hover:text-[#1B2F20] transition-all">
+            <a href="#sobre" className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-white hover:text-[#1B2F20] transition-all">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              Assista ao Vídeo
+              ASSISTA AO VÍDEO
             </a>
           </div>
         </div>
       </section>
 
-      {/* BARRA FLUTUANTE INFORMATIVA */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-10 lg:-mt-16 mb-16">
-        <div className="bg-[#F4EFE8] rounded-2xl shadow-xl flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-[#e1d5c1] p-2">
+      {/* BARRA FLUTUANTE INFORMATIVA (5 COLUNAS) */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-16 mb-24">
+        <div className="bg-[#F4EFE8] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-[#e1d5c1] p-2">
           
-          <div className="flex-1 p-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-            <div className="text-[#B89247]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg></div>
+          <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
+            <div className="text-[#2D4A33]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg></div>
             <div>
-              <h4 className="font-bold text-xs uppercase tracking-wider mb-1">Produtores Reais</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">Histórias verdadeiras de quem cultiva com dedicação.</p>
+              <h4 className="font-bold text-[10px] uppercase tracking-wider mb-1 text-[#1B2F20]">Produtores Reais</h4>
+              <p className="text-[11px] text-gray-600 leading-relaxed">Histórias verdadeiras de quem cultiva com dedicação.</p>
             </div>
           </div>
           
-          <div className="flex-1 p-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-            <div className="text-[#B89247]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 8h-3V4H3v13a4 4 0 004 4h9a4 4 0 004-4V8zM7 4v5M11 4v5M15 4v5" /></svg></div>
+          <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
+            <div className="text-[#2D4A33]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 8h-3V4H3v13a4 4 0 004 4h9a4 4 0 004-4V8zM7 4v5M11 4v5M15 4v5" /></svg></div>
             <div>
-              <h4 className="font-bold text-xs uppercase tracking-wider mb-1">Cafés Especiais</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">Grãos selecionados com qualidade e rastreabilidade.</p>
+              <h4 className="font-bold text-[10px] uppercase tracking-wider mb-1 text-[#1B2F20]">Cafés Especiais</h4>
+              <p className="text-[11px] text-gray-600 leading-relaxed">Grãos selecionados com qualidade e rastreabilidade.</p>
             </div>
           </div>
 
-          <div className="flex-1 p-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-            <div className="text-[#B89247]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
+          <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
+            <div className="text-[#2D4A33]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
             <div>
-              <h4 className="font-bold text-xs uppercase tracking-wider mb-1">Sustentabilidade</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">Valorizamos práticas que respeitam a terra e o futuro.</p>
+              <h4 className="font-bold text-[10px] uppercase tracking-wider mb-1 text-[#1B2F20]">Sustentabilidade</h4>
+              <p className="text-[11px] text-gray-600 leading-relaxed">Valorizamos práticas que respeitam a terra e o futuro.</p>
+            </div>
+          </div>
+
+          <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
+            <div className="text-[#2D4A33]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></div>
+            <div>
+              <h4 className="font-bold text-[10px] uppercase tracking-wider mb-1 text-[#1B2F20]">Conexão</h4>
+              <p className="text-[11px] text-gray-600 leading-relaxed">Aproximamos quem produz de quem aprecia.</p>
+            </div>
+          </div>
+
+          <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
+            <div className="text-[#2D4A33]"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <div>
+              <h4 className="font-bold text-[10px] uppercase tracking-wider mb-1 text-[#1B2F20]">Sul de Minas</h4>
+              <p className="text-[11px] text-gray-600 leading-relaxed">Mais que uma região, um berço de excelência.</p>
             </div>
           </div>
 
@@ -531,16 +559,16 @@ export default function Home() {
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
               {listaPatrocinadores.map((patrocinador) => (
-                <div key={patrocinador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-4 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all text-center h-[140px] md:h-[160px]">
+                <div key={patrocinador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-1 md:p-2 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all text-center h-[140px] md:h-[160px]">
                   <div className="h-full w-full flex items-center justify-center">
-                    <img src={patrocinador.logo_url} alt={patrocinador.nome} className="max-h-full max-w-[80%] object-contain mix-blend-multiply" />
+                    <img src={patrocinador.logo_url} alt={patrocinador.nome} className="max-h-full max-w-[95%] object-contain mix-blend-multiply" />
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Apoiadores */}
+          {/* Apoiadores (Ajustado para 4 itens e imgs maiores) */}
           <div>
             <div className="flex items-center justify-center gap-4 mb-12">
               <hr className="w-16 md:w-32 border-[#B89247]" />
@@ -551,11 +579,11 @@ export default function Home() {
               <hr className="w-16 md:w-32 border-[#B89247]" />
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:max-w-4xl lg:mx-auto gap-4 md:gap-6">
               {listaApoiadores.map((apoiador) => (
-                <div key={apoiador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-4 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all h-[140px] md:h-[160px]">
+                <div key={apoiador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-1 md:p-2 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all h-[140px] md:h-[160px]">
                   <div className="h-full w-full flex items-center justify-center">
-                    <img src={apoiador.logo_url} alt={apoiador.nome} className="max-h-full max-w-[80%] object-contain mix-blend-multiply" />
+                    <img src={apoiador.logo_url} alt={apoiador.nome} className="max-h-full max-w-[95%] object-contain mix-blend-multiply" />
                   </div>
                 </div>
               ))}
