@@ -14,7 +14,7 @@ const produtores = [
     historia: "Comandando o Sítio Ribeirãozinho, Naiara uniu a delicadeza do toque feminino à força do trabalho no campo. Seus microlotes destacam notas frutadas, reflexo de uma colheita 100% seletiva e muito amor pelas terras de Muzambinho.",
     link_whatsapp: "https://wa.me/5535999349440?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.", 
     link_instagram: "https://www.instagram.com/cafeventuras/",
-    imagem_produto: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/venturas.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
   },
   {
@@ -26,7 +26,7 @@ const produtores = [
     historia: "A tradição da Família Ferreira corre nas veias de Elias. Passado de geração em geração, o cultivo no Sítio Bela Vista alia o conhecimento dos antigos com novas técnicas de pós-colheita, resultando em uma xícara clássica, encorpada e inesquecível.",
     link_whatsapp: "https://wa.me/5535998637490?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/familia_ferreira_cafes/",
-    imagem_produto: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/familia_ferreira.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -38,7 +38,7 @@ const produtores = [
     historia: "Na Serrinha dos Cristais, Valdirene trata o café como uma verdadeira obra de arte da natureza. O foco do Grãos do Chico é a agricultura sustentável e a preservação ambiental, o que traz para a bebida um frescor único e notas florais.",
     link_whatsapp: "https://wa.me/5535999581140?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/graosdochico/",
-    imagem_produto: "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/graos_do_chico.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -50,7 +50,7 @@ const produtores = [
     historia: "Trazendo inovação para o Sítio Guatapará, Thales representa a nova geração de cafeicultores apaixonados. O Café JRossi passa por processos cuidadosos de secagem, criando um perfil de bebida exótica, doce e com acidez brilhante.",
     link_whatsapp: "https://wa.me/5535988346217?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafejrossi/",
-    imagem_produto: "https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/jrossi.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -62,7 +62,7 @@ const produtores = [
     historia: "No coração do Sítio Pinhal, Selma transforma trabalho duro em poesia líquida. O Café Bella Maria é fruto de uma seleção rigorosa dos melhores grãos da propriedade, oferecendo um café aconchegante, com notas de chocolate e caramelo.",
     link_whatsapp: "https://wa.me/5535991535704?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafebellamaria/",
-    imagem_produto: "https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/bella_maria.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -74,7 +74,7 @@ const produtores = [
     historia: "O Imolive Café nasceu da força e determinação de Joana no Sítio Gonçalves. Cada etapa, da florada à secagem em terreiro, é acompanhada de perto, resultando em um café limpo, equilibrado e que conquista paladares exigentes.",
     link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/imolivecafe/",
-    imagem_produto: "https://images.unsplash.com/photo-1587734195503-904fca47e0e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/imolive.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -86,7 +86,7 @@ const produtores = [
     historia: "A Fazenda Viaduto é o berço do Café Benassi. Aproveitando a altitude e o terroir privilegiado da região, Rogério cultiva grãos que passam por maturação lenta, entregando uma doçura natural e um aroma que invade todo o ambiente.",
     link_whatsapp: "https://wa.me/5535999079877?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafebenassi/",
-    imagem_produto: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/benassi.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -98,7 +98,7 @@ const produtores = [
     historia: "Na Fazenda São Domingos, Armando e Suzana tratam o café como o verdadeiro ouro negro de Minas Gerais. O Maturasso é cultivado com zelo artesanal, trazendo para a xícara a rusticidade elegante da roça e um retrogosto muito marcante.",
     link_whatsapp: "https://wa.me/5535991355474?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/maturasso.cafes/",
-    imagem_produto: "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/maturasso.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -110,7 +110,7 @@ const produtores = [
     historia: "Renata transformou o Sítio Bela Vista na morada do Dom Aurélio. Com um olhar clínico para a qualidade, seus grãos são selecionados rigorosamente e secos lentamente, criando um microlote sofisticado, aveludado e cheio de personalidade.",
     link_whatsapp: "https://wa.me/5535992208080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafedomaurelio/",
-    imagem_produto: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/dom_aurelio.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -122,7 +122,7 @@ const produtores = [
     historia: "No Sítio Belém, Silmara cultiva o Florisa com o coração. Cuidando de cada detalhe, desde o manejo no campo até a precisão da torra, ela oferece um café que é um abraço em forma de bebida, destacando notas doces e corpo cremoso.",
     link_whatsapp: "https://wa.me/5535999395080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafe_florisa/",
-    imagem_produto: "https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/florisa.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -134,7 +134,7 @@ const produtores = [
     historia: "A busca pela xícara perfeita guiou Juliana na criação do Café Espoir no Sítio Retiro. Apostando em processos induzidos e muita pesquisa, seu café revela notas complexas de frutas maduras, elevando completamente a experiência de degustação.",
     link_whatsapp: "https://wa.me/5535998948301?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafeespecial.espoir/",
-    imagem_produto: "https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/espoir.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -146,7 +146,7 @@ const produtores = [
     historia: "Com as mãos sujas de terra e o peito cheio de orgulho, Micheli faz do Minas Golden uma joia rara. Este café reflete toda a maestria da cafeicultura de montanha, entregando uma acidez equilibrada, cítrica e um final super prolongado.",
     link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/minasgoldencafe/",
-    imagem_produto: "https://images.unsplash.com/photo-1587734195503-904fca47e0e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/minas_golden.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -158,7 +158,7 @@ const produtores = [
     historia: "Cercado pelas águas do Sítio Cachoeira do Cambuí, Paulo desenvolveu o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
     link_whatsapp: "https://wa.me/5535991966264?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/manjore.cafe.especial/",
-    imagem_produto: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/manjore.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -170,7 +170,7 @@ const produtores = [
     historia: "Nas terras altas do Sítio Morro Preto, Tatiana dá vida ao Lalato. Um café que traduz o amor incondicional pela terra, apresentando uma bebida extremamente limpa, encorpada e com notas que lembram melaço e caramelo tostado.",
     link_whatsapp: "https://wa.me/5535998900972?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/lalatocafesespeciais/",
-    imagem_produto: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/lalato.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -182,7 +182,7 @@ const produtores = [
     historia: "Homenageando as raízes familiares no Sítio Brumado, Paula assina o Maria Cecilia. Um café que surpreende pela versatilidade: ideal para o conforto do dia a dia, mas com a complexidade de um especial, revelando nuances de nozes e cacau.",
     link_whatsapp: "https://wa.me/5535991607419?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/mariaceciliacafesespeciais/",
-    imagem_produto: "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imagem_produto: "/maria_cecilia.png",
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ];
@@ -240,7 +240,6 @@ export default function Home() {
       {/* HEADER */}
       <header className="flex flex-col xl:flex-row justify-between items-center py-5 px-6 md:px-12 bg-[#F4EFE8] sticky top-0 z-50 shadow-sm border-b border-[#e1d5c1]">
         
-        {/* LOGO OFICIAL MAIOR AINDA */}
         <a href="#inicio" className="flex items-center mb-4 xl:mb-0">
           <img 
             src="/patrocinadores/rai_do_agora.jpg" 
@@ -249,7 +248,6 @@ export default function Home() {
           />
         </a>
 
-        {/* NAVEGAÇÃO - Removida a aba "NOTÍCIAS" */}
         <nav className="flex flex-wrap justify-center gap-4 md:gap-8 text-[11px] font-bold tracking-widest uppercase text-[#333333]">
           <a href="#inicio" className="text-[#1B2F20] pb-1 border-b-2 border-[#1B2F20]">INÍCIO</a>
           <a href="#produtores" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">PRODUTORES</a>
@@ -258,7 +256,6 @@ export default function Home() {
           <a href="#contato" className="hover:text-[#B89247] transition-colors pb-1 border-b-2 border-transparent hover:border-[#B89247]">CONTATO</a>
         </nav>
 
-        {/* BOTÃO AÇÃO NO TOPO À DIREITA */}
         <a href="#produtores" className="hidden xl:inline-flex items-center gap-2 bg-[#2D4A33] text-[#F4EFE8] px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#1B2F20] transition-colors">
           CONHEÇA OS PRODUTORES
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -269,14 +266,12 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a120d]">
-        {/* IMAGEM DE FUNDO E DEGRADÊ */}
         <div className="absolute inset-0 z-0">
           <img 
             src="/hero-bg.jpg" 
             className="w-full h-full object-cover object-center"
             alt="Produtor de café observando a plantação no pôr do sol" 
           />
-          {/* Degradê escuro da esquerda para a direita para dar leitura ao texto */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#08120a] via-[#08120a]/80 to-transparent"></div>
         </div>
 
@@ -290,7 +285,6 @@ export default function Home() {
             <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
           </h2>
           
-          {/* Linha decorativa com a plantinha dourada */}
           <div className="flex items-center gap-4 mb-6">
             <hr className="w-12 border-[#C89F53]" />
             <svg className="w-5 h-5 text-[#C89F53]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -316,7 +310,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BARRA FLUTUANTE INFORMATIVA (5 COLUNAS) */}
+      {/* BARRA FLUTUANTE INFORMATIVA */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-16 mb-24">
         <div className="bg-[#F4EFE8] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-[#e1d5c1] p-2">
           
@@ -385,7 +379,7 @@ export default function Home() {
           </a>
         </div>
         
-        <div className="relative rounded-3xl overflow-hidden aspect-video shadow-2xl group cursor-pointer">
+        <div className="relative rounded-3xl overflow-hidden aspect-video shadow-lg group cursor-pointer">
           <img 
             src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
@@ -424,7 +418,7 @@ export default function Home() {
                   
                   <div className="flex flex-col lg:flex-row">
                     
-                    <div className="w-full lg:w-[40%] bg-gray-900 relative min-h-[300px] lg:min-h-[450px]">
+                    <div className="w-full lg:w-[35%] bg-gray-900 relative min-h-[300px] lg:min-h-full">
                       {view === 'video' ? (
                         <iframe 
                           className="absolute inset-0 w-full h-full"
@@ -445,7 +439,7 @@ export default function Home() {
                       )}
                     </div>
 
-                    <div className="w-full lg:w-[35%] p-8 lg:p-12 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-[#eaddcf]">
+                    <div className="w-full lg:w-[35%] p-8 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-[#eaddcf]">
                       <span className="inline-block bg-[#eaf0eb] text-[#1B2F20] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm mb-4 self-start">
                         Produtor
                       </span>
@@ -467,13 +461,16 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <div className="w-full lg:w-[25%] p-8 flex flex-col items-center justify-center bg-[#fcfaf7]">
-                      <img 
-                        src={produtor.imagem_produto} 
-                        alt={produtor.nome_produto}
-                        className="w-48 h-64 object-cover rounded-xl shadow-lg border border-[#eaddcf] mb-4"
-                      />
-                      <span className="text-xs font-bold text-[#B89247] tracking-widest uppercase text-center">
+                    {/* MOLDURA VERTICAL: Garante que o container acompanhe a altura, mas a foto encaixe perfeitamente e 100% visível */}
+                    <div className="w-full lg:w-[30%] p-6 flex flex-col items-center justify-center bg-[#fcfaf7]">
+                      <div className="w-full relative h-[400px] bg-white rounded-2xl shadow-sm p-4 flex items-center justify-center overflow-hidden group">
+                        <img 
+                          src={produtor.imagem_produto} 
+                          alt={produtor.nome_produto}
+                          className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <span className="text-[11px] font-bold text-[#B89247] tracking-widest uppercase text-center mt-4">
                         {produtor.nome_produto}
                       </span>
                     </div>
@@ -490,13 +487,15 @@ export default function Home() {
                     <div className="flex flex-col items-center w-full md:w-1/3">
                       <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Fale com o produtor</span>
                       <div className="flex gap-8">
-                        <a href={produtor.link_whatsapp} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-[#1B2F20] hover:text-[#25D366] transition-colors group">
+                        <a href={produtor.link_whatsapp} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-[#1B2F20] hover:text-[#25D366] transition-colors group relative z-10 cursor-pointer">
                           <div className="w-10 h-10 rounded-full bg-[#f4efe8] flex items-center justify-center border border-[#eaddcf] group-hover:border-[#25D366]">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                           </div>
                           <span className="text-[10px] font-bold">WhatsApp</span>
                         </a>
-                        <a href={produtor.link_instagram} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-[#1B2F20] hover:text-[#C13584] transition-colors group">
+                        
+                        {/* BOTÃO DO INSTAGRAM (Reforçado para não sumir ou sobrepor nada) */}
+                        <a href={produtor.link_instagram} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-[#1B2F20] hover:text-[#C13584] transition-colors group relative z-10 cursor-pointer">
                           <div className="w-10 h-10 rounded-full bg-[#f4efe8] flex items-center justify-center border border-[#eaddcf] group-hover:border-[#C13584]">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" /></svg>
                           </div>
@@ -509,7 +508,7 @@ export default function Home() {
                        <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">Localização</span>
                        <button 
                         onClick={() => alternarPainel(produtor.id, 'mapa')}
-                        className="inline-flex items-center gap-2 border-2 border-[#1B2F20] text-[#1B2F20] px-6 py-2.5 rounded-sm text-[11px] font-bold uppercase tracking-wider hover:bg-[#1B2F20] hover:text-[#F4EFE8] transition-colors"
+                        className="inline-flex items-center gap-2 border-2 border-[#1B2F20] text-[#1B2F20] px-6 py-2.5 rounded-sm text-[11px] font-bold uppercase tracking-wider hover:bg-[#1B2F20] hover:text-[#F4EFE8] transition-colors relative z-10 cursor-pointer"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
                         {view === 'mapa' ? 'Ver Vídeo' : 'Ver no Mapa'}
@@ -526,7 +525,7 @@ export default function Home() {
 
       {/* SEÇÃO PATROCINADORES E APOIADORES (INTRO) */}
       <section className="bg-[#1B2F20] py-20 border-t-4 border-[#B89247] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-40 bg-[url('/12.jpg')] bg-cover bg-bottom"></div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" /></svg>
@@ -568,7 +567,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Apoiadores (Ajustado para 4 itens e imgs maiores) */}
+          {/* Apoiadores */}
           <div>
             <div className="flex items-center justify-center gap-4 mb-12">
               <hr className="w-16 md:w-32 border-[#B89247]" />
