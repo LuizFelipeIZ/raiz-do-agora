@@ -122,7 +122,7 @@ const produtores = [
     historia: "No Sítio Belém, Silmara cultiva o Florisa com o coração. Cuidando de cada detalhe, desde o manejo no campo até a precisão da torra, ela oferece um café que é um abraço em forma de bebida, destacando notas doces e corpo cremoso.",
     link_whatsapp: "https://wa.me/5535999395080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafe_florisa/",
-    imagem_produto: "/florisa.png",
+    imagem_produto: "/florisa2.png", 
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -146,7 +146,7 @@ const produtores = [
     historia: "Com as mãos sujas de terra e o peito cheio de orgulho, Micheli faz do Minas Golden uma joia rara. Este café reflete toda a maestria da cafeicultura de montanha, entregando uma acidez equilibrada, cítrica e um final super prolongado.",
     link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/minasgoldencafe/",
-    imagem_produto: "/minas_golden.png",
+    imagem_produto: "/minas_golden2.png", 
     link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -264,45 +264,44 @@ export default function Home() {
         </a>
       </header>
 
-      {/* HERO SECTION */}
-      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a120d]">
+      {/* HERO SECTION - 100% LIMPO E SEM SOMBREAMENTOS NA FOTO */}
+      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#F4EFE8]">
         <div className="absolute inset-0 z-0">
           <img 
             src="/hero-bg.jpg" 
             className="w-full h-full object-cover object-center"
             alt="Produtor de café observando a plantação no pôr do sol" 
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#08120a] via-[#08120a]/80 to-transparent"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-10">
-          <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block">
+          <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             NOSSO PROPÓSITO
           </span>
           
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
             <span className="text-white">Conectamos<br/>histórias,</span><br/>
             <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
           </h2>
           
           <div className="flex items-center gap-4 mb-6">
             <hr className="w-12 border-[#C89F53]" />
-            <svg className="w-5 h-5 text-[#C89F53]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-5 h-5 text-[#C89F53] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2z" />
             </svg>
             <hr className="w-12 border-[#C89F53]" />
           </div>
 
-          <p className="text-base md:text-lg text-gray-200 mb-10 leading-relaxed max-w-lg">
+          <p className="text-base md:text-lg text-white font-medium mb-10 leading-relaxed max-w-lg drop-shadow-[0_3px_5px_rgba(0,0,0,0.9)]">
             O Raiz do Agora dá voz aos produtores de cafés especiais do Sul de Minas, valorizando suas histórias, tradições e o cuidado em cada xícara.
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all">
+            <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all shadow-lg">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
               CONHEÇA OS PRODUTORES
             </a>
-            <a href="#sobre" className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-white hover:text-[#1B2F20] transition-all">
+            <a href="#sobre" className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-white hover:text-[#1B2F20] transition-all bg-black/20 shadow-lg">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
               ASSISTA AO VÍDEO
             </a>
@@ -357,7 +356,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SEÇÃO SOBRE O PROJETO */}
+      {/* SEÇÃO SOBRE O PROJETO - IMAGEM 100% PURA */}
       <section id="sobre" className="max-w-7xl mx-auto px-6 md:px-12 py-10 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 block">
@@ -385,12 +384,12 @@ export default function Home() {
             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
             alt="Produtor de café olhando as montanhas" 
           />
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/40 group-hover:bg-white/40 transition-colors">
-              <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <svg className="w-6 h-6 text-white ml-1 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
             </div>
           </div>
-          <p className="absolute bottom-6 left-6 font-serif text-white text-2xl drop-shadow-md">
+          <p className="absolute bottom-6 left-6 font-serif text-white text-2xl drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
             Cada história<br/><span className="text-[#B89247] italic">tem raiz.</span>
           </p>
         </div>
@@ -461,13 +460,12 @@ export default function Home() {
                       </p>
                     </div>
 
-                    {/* FOTO DO PRODUTO: SEM SOBRA NENHUMA */}
                     <div className="w-full lg:w-[30%] p-6 flex flex-col items-center justify-center bg-[#fcfaf7]">
                       <div className="w-full relative aspect-[3/4] bg-white rounded-2xl p-4 flex items-center justify-center overflow-hidden group">
                         <img 
                           src={produtor.imagem_produto} 
                           alt={produtor.nome_produto}
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                          className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <span className="text-[11px] font-bold text-[#B89247] tracking-widest uppercase text-center mt-4">
@@ -524,15 +522,17 @@ export default function Home() {
 
       {/* SEÇÃO PATROCINADORES E APOIADORES (INTRO) */}
       <section className="relative py-24 md:py-32 border-t-4 border-[#B89247] overflow-hidden flex items-center justify-center min-h-[400px]">
-        {/* IMAGEM 12.JPG: Âncora à direita (bg-right) p/ mostrar os cafés e 100% livre de películas escuras! */}
+        {/* IMAGEM 12.JPG ALINHADA À DIREITA PARA MOSTRAR OS CAFÉS */}
         <div className="absolute inset-0 bg-[url('/12.jpg')] bg-cover bg-right md:bg-[center_right]"></div>
+        
+        {/* PELÍCULA PRETA SUAVE (40%) APENAS AQUI */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" /></svg>
             PATROCINADORES E APOIADORES
           </span>
-          {/* Sombras nos textos para dar leitura por cima do fundo claro da foto */}
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight max-w-2xl drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
             Juntos, fortalecemos histórias e cultivamos o futuro.
           </h2>
