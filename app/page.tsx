@@ -379,7 +379,7 @@ export default function Home() {
           </a>
         </div>
         
-        <div className="relative rounded-3xl overflow-hidden aspect-video shadow-lg group cursor-pointer">
+        <div className="relative rounded-3xl overflow-hidden aspect-video shadow-sm group cursor-pointer">
           <img 
             src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
@@ -461,13 +461,13 @@ export default function Home() {
                       </p>
                     </div>
 
-                    {/* MOLDURA VERTICAL: Garante que o container acompanhe a altura, mas a foto encaixe perfeitamente e 100% visível */}
+                    {/* FOTO DO PRODUTO: SEM SOBRA NENHUMA */}
                     <div className="w-full lg:w-[30%] p-6 flex flex-col items-center justify-center bg-[#fcfaf7]">
-                      <div className="w-full relative h-[400px] bg-white rounded-2xl shadow-sm p-4 flex items-center justify-center overflow-hidden group">
+                      <div className="w-full relative aspect-[3/4] bg-white rounded-2xl p-4 flex items-center justify-center overflow-hidden group">
                         <img 
                           src={produtor.imagem_produto} 
                           alt={produtor.nome_produto}
-                          className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <span className="text-[11px] font-bold text-[#B89247] tracking-widest uppercase text-center mt-4">
@@ -494,7 +494,6 @@ export default function Home() {
                           <span className="text-[10px] font-bold">WhatsApp</span>
                         </a>
                         
-                        {/* BOTÃO DO INSTAGRAM (Reforçado para não sumir ou sobrepor nada) */}
                         <a href={produtor.link_instagram} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-[#1B2F20] hover:text-[#C13584] transition-colors group relative z-10 cursor-pointer">
                           <div className="w-10 h-10 rounded-full bg-[#f4efe8] flex items-center justify-center border border-[#eaddcf] group-hover:border-[#C13584]">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" /></svg>
@@ -524,18 +523,21 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO PATROCINADORES E APOIADORES (INTRO) */}
-      <section className="bg-[#1B2F20] py-20 border-t-4 border-[#B89247] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-40 bg-[url('/12.jpg')] bg-cover bg-bottom"></div>
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-          <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2">
+      <section className="relative py-24 md:py-32 border-t-4 border-[#B89247] overflow-hidden flex items-center justify-center min-h-[400px]">
+        {/* IMAGEM 12.JPG: Âncora à direita (bg-right) p/ mostrar os cafés e 100% livre de películas escuras! */}
+        <div className="absolute inset-0 bg-[url('/12.jpg')] bg-cover bg-right md:bg-[center_right]"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+          <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" /></svg>
             PATROCINADORES E APOIADORES
           </span>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight max-w-2xl">
+          {/* Sombras nos textos para dar leitura por cima do fundo claro da foto */}
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight max-w-2xl drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
             Juntos, fortalecemos histórias e cultivamos o futuro.
           </h2>
-          <hr className="border-[#B89247] w-16 mb-6" />
-          <p className="text-sm md:text-base text-gray-300 max-w-lg leading-relaxed">
+          <hr className="border-[#B89247] w-16 mb-6 shadow-sm drop-shadow-lg" />
+          <p className="text-sm md:text-base text-gray-100 max-w-lg leading-relaxed drop-shadow-[0_3px_5px_rgba(0,0,0,0.9)] font-medium">
             Agradecemos às empresas e instituições que acreditam no valor dos cafés especiais e no poder das conexões que transformam.
           </p>
         </div>
