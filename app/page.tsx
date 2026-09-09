@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 // ==========================================
 // 📍 ÁREA DE DADOS (PRODUTORES)
@@ -15,7 +16,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535999349440?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.", 
     link_instagram: "https://www.instagram.com/cafeventuras/",
     imagem_produto: "/venturas.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+    link_video: "https://youtu.be/Cn3U1KPRz98" // ATUALIZADO
   },
   {
     id: 2,
@@ -27,7 +28,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535998637490?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/familia_ferreira_cafes/",
     imagem_produto: "/familia_ferreira.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/pqVZRCzwPts" 
   },
   {
     id: 3,
@@ -39,7 +40,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535999581140?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/graosdochico/",
     imagem_produto: "/graos_do_chico.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/uAu6AOjiddI" 
   },
   {
     id: 4,
@@ -51,7 +52,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535988346217?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafejrossi/",
     imagem_produto: "/jrossi.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/KE1vK8uK85I" 
   },
   {
     id: 5,
@@ -63,7 +64,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535991535704?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafebellamaria/",
     imagem_produto: "/bella_maria.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/EMjOTPjlZCw" 
   },
   {
     id: 6,
@@ -75,7 +76,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/imolivecafe/",
     imagem_produto: "/imolive.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/EH7VFxraRC4" // ATUALIZADO
   },
   {
     id: 7,
@@ -87,7 +88,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535999079877?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafebenassi/",
     imagem_produto: "/benassi.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/JWXh4uC4luM" 
   },
   {
     id: 8,
@@ -99,7 +100,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535991355474?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/maturasso.cafes/",
     imagem_produto: "/maturasso.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/-kECMO-89iE" 
   },
   {
     id: 9,
@@ -111,7 +112,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535992208080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafedomaurelio/",
     imagem_produto: "/dom_aurelio.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/wzT-Enkle_Q" 
   },
   {
     id: 10,
@@ -123,7 +124,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535999395080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafe_florisa/",
     imagem_produto: "/florisa2.png", 
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/MHrm0kG28jI" 
   },
   {
     id: 11,
@@ -135,7 +136,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535998948301?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafeespecial.espoir/",
     imagem_produto: "/espoir.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/V2KB5bWVl0c" 
   },
   {
     id: 12,
@@ -147,7 +148,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/minasgoldencafe/",
     imagem_produto: "/minas_golden2.png", 
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/O7Cy1Hr-2as" 
   },
   {
     id: 13,
@@ -159,7 +160,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535991966264?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/manjore.cafe.especial/",
     imagem_produto: "/manjore.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/j140q1i8j9A" 
   },
   {
     id: 14,
@@ -171,7 +172,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535998900972?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/lalatocafesespeciais/",
     imagem_produto: "/lalato.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/4YrTfW2re_M" // ATUALIZADO
   },
   {
     id: 15,
@@ -183,7 +184,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535991607419?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/mariaceciliacafesespeciais/",
     imagem_produto: "/maria_cecilia.png",
-    link_video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    link_video: "https://youtu.be/5e3YSG8Szdw" 
   }
 ];
 
@@ -264,8 +265,8 @@ export default function Home() {
         </a>
       </header>
 
-      {/* HERO SECTION - 100% LIMPO E SEM SOMBREAMENTOS NA FOTO */}
-      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#F4EFE8]">
+      {/* HERO SECTION */}
+      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a120d]">
         <div className="absolute inset-0 z-0">
           <img 
             src="/hero-bg.jpg" 
@@ -356,7 +357,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SEÇÃO SOBRE O PROJETO - IMAGEM 100% PURA */}
+      {/* SEÇÃO SOBRE O PROJETO */}
       <section id="sobre" className="max-w-7xl mx-auto px-6 md:px-12 py-10 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 block">
@@ -479,7 +480,7 @@ export default function Home() {
                     
                     <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/3">
                       <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Região</span>
-                      <strong className="text-lg text-[#1B2F20] font-serif">Sul de Minas Gerais</strong>
+                      <strong className="text-lg text-[#1B2F20] font-serif">Minas Gerais</strong>
                     </div>
 
                     <div className="flex flex-col items-center w-full md:w-1/3">
@@ -522,10 +523,7 @@ export default function Home() {
 
       {/* SEÇÃO PATROCINADORES E APOIADORES (INTRO) */}
       <section className="relative py-24 md:py-32 border-t-4 border-[#B89247] overflow-hidden flex items-center justify-center min-h-[400px]">
-        {/* IMAGEM 12.JPG ALINHADA À DIREITA PARA MOSTRAR OS CAFÉS */}
         <div className="absolute inset-0 bg-[url('/12.jpg')] bg-cover bg-right md:bg-[center_right]"></div>
-        
-        {/* PELÍCULA PRETA SUAVE (40%) APENAS AQUI */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
@@ -653,6 +651,9 @@ export default function Home() {
           &copy; {new Date().getFullYear()} Raiz do Agora. Todos os direitos reservados.
         </div>
       </footer>
+      
+      {/* Componente Analytics da Vercel integrado */}
+      <Analytics />
     </main>
   );
 }
