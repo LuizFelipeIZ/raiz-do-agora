@@ -265,64 +265,53 @@ export default function Home() {
         </a>
       </header>
 
-      {/* HERO SECTION */}
-      <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-[#0a120d] py-20">
+      {/* HERO SECTION ORIGINAL */}
+      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a120d]">
         <div className="absolute inset-0 z-0">
           <img 
             src="/hero-bg.jpg" 
-            className="w-full h-full object-cover object-center opacity-30"
+            className="w-full h-full object-cover object-center"
             alt="Produtor de café observando a plantação no pôr do sol" 
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-              NOSSO PROPÓSITO
-            </span>
-            
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
-              <span className="text-white">Conectamos<br/>histórias,</span><br/>
-              <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
-            </h2>
-            
-            <div className="flex items-center gap-4 mb-6">
-              <hr className="w-12 border-[#C89F53]" />
-              <svg className="w-5 h-5 text-[#C89F53] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2z" />
-              </svg>
-              <hr className="w-12 border-[#C89F53]" />
-            </div>
-
-            <p className="text-base md:text-lg text-white font-medium mb-10 leading-relaxed max-w-lg drop-shadow-[0_3px_5px_rgba(0,0,0,0.9)]">
-              O Raiz do Agora dá voz aos produtores de cafés especiais do Sul de Minas, valorizando suas histórias, tradições e o cuidado em cada xícara.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all shadow-lg">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                CONHEÇA OS PRODUTORES
-              </a>
-            </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-10">
+          <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            NOSSO PROPÓSITO
+          </span>
+          
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
+            <span className="text-white">Conectamos<br/>histórias,</span><br/>
+            <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
+          </h2>
+          
+          <div className="flex items-center gap-4 mb-6">
+            <hr className="w-12 border-[#C89F53]" />
+            <svg className="w-5 h-5 text-[#C89F53] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2z" />
+            </svg>
+            <hr className="w-12 border-[#C89F53]" />
           </div>
 
-          {/* VÍDEO DO YOUTUBE AQUI */}
-          <div className="w-full relative aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-[#C89F53]/30">
-            <iframe 
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/ArNLqqUDjOI?rel=0&modestbranding=1" 
-              title="Apresentação Raiz do Agora" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <p className="text-base md:text-lg text-white font-medium mb-10 leading-relaxed max-w-lg drop-shadow-[0_3px_5px_rgba(0,0,0,0.9)]">
+            O Raiz do Agora dá voz aos produtores de cafés especiais do Sul de Minas, valorizando suas histórias, tradições e o cuidado em cada xícara.
+          </p>
+          
+          <div className="flex flex-wrap gap-4">
+            <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all shadow-lg">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              CONHEÇA OS PRODUTORES
+            </a>
+            <a href="#sobre" className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-white hover:text-[#1B2F20] transition-all bg-black/20 shadow-lg">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              ASSISTA AO VÍDEO
+            </a>
           </div>
         </div>
       </section>
 
       {/* BARRA FLUTUANTE INFORMATIVA */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-16 mb-24 hidden lg:block">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-16 mb-24">
         <div className="bg-[#F4EFE8] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-[#e1d5c1] p-2">
           
           <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
@@ -368,7 +357,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SEÇÃO SOBRE O PROJETO */}
+      {/* SEÇÃO SOBRE O PROJETO (AGORA COM O VÍDEO NO LUGAR CERTO) */}
       <section id="sobre" className="max-w-7xl mx-auto px-6 md:px-12 py-10 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 block">
@@ -390,20 +379,17 @@ export default function Home() {
           </a>
         </div>
         
-        <div className="relative rounded-3xl overflow-hidden aspect-video shadow-sm group cursor-pointer">
-          <img 
-            src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
-            alt="Produtor de café olhando as montanhas" 
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/40 group-hover:bg-white/40 transition-colors">
-              <svg className="w-6 h-6 text-white ml-1 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
-          <p className="absolute bottom-6 left-6 font-serif text-white text-2xl drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
-            Cada história<br/><span className="text-[#B89247] italic">tem raiz.</span>
-          </p>
+        {/* AQUI ESTÁ O VÍDEO DO YOUTUBE SUBSTITUINDO A IMAGEM DOS GRÃOS */}
+        <div className="relative rounded-3xl overflow-hidden aspect-video shadow-xl border border-[#eaddcf]">
+          <iframe 
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/ArNLqqUDjOI?rel=0&modestbranding=1" 
+            title="Apresentação Raiz do Agora" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 
