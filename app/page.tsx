@@ -16,7 +16,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535999349440?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.", 
     link_instagram: "https://www.instagram.com/cafeventuras/",
     imagem_produto: "/venturas.png",
-    link_video: "https://youtu.be/Cn3U1KPRz98" // ATUALIZADO
+    link_video: "https://youtu.be/Cn3U1KPRz98" 
   },
   {
     id: 2,
@@ -76,7 +76,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/imolivecafe/",
     imagem_produto: "/imolive.png",
-    link_video: "https://youtu.be/EH7VFxraRC4" // ATUALIZADO
+    link_video: "https://youtu.be/EH7VFxraRC4" 
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ const produtores = [
     localizacao_texto: "Fazenda Viaduto • Muzambinho/MG",
     coordenadas: "-21.355556,-46.483417", 
     historia: "A Fazenda Viaduto é o berço do Café Benassi. Aproveitando a altitude e o terroir privilegiado da região, Rogério cultiva grãos que passam por maturação lenta, entregando uma doçura natural e um aroma que invade todo o ambiente.",
-    link_whatsapp: "https://wa.me/5535999079877?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_whatsapp: "https://w.app/waxb0y", // ATUALIZADO AQUI
     link_instagram: "https://www.instagram.com/cafebenassi/",
     imagem_produto: "/benassi.png",
     link_video: "https://youtu.be/JWXh4uC4luM" 
@@ -156,7 +156,7 @@ const produtores = [
     nome_produto: "Manjorê Café",
     localizacao_texto: "Sítio Cachoeira do Cambuí • Muzambinho/MG",
     coordenadas: "-21.391722,-46.437389", 
-    historia: "Cercado pelas águas do Sítio Cachoeira do Cambuí, Paulo desenvolveu o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
+    historia: "Cercado pelas águas do Sítio Cachoeira do Cambuí, Paulo desenvolveu o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e dodoçura vibrante.",
     link_whatsapp: "https://wa.me/5535991966264?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/manjore.cafe.especial/",
     imagem_produto: "/manjore.png",
@@ -172,7 +172,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535998900972?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/lalatocafesespeciais/",
     imagem_produto: "/lalato.png",
-    link_video: "https://youtu.be/4YrTfW2re_M" // ATUALIZADO
+    link_video: "https://youtu.be/4YrTfW2re_M" 
   },
   {
     id: 15,
@@ -266,52 +266,63 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <section id="inicio" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a120d]">
+      <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-[#0a120d] py-20">
         <div className="absolute inset-0 z-0">
           <img 
             src="/hero-bg.jpg" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center opacity-30"
             alt="Produtor de café observando a plantação no pôr do sol" 
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-10">
-          <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            NOSSO PROPÓSITO
-          </span>
-          
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
-            <span className="text-white">Conectamos<br/>histórias,</span><br/>
-            <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
-          </h2>
-          
-          <div className="flex items-center gap-4 mb-6">
-            <hr className="w-12 border-[#C89F53]" />
-            <svg className="w-5 h-5 text-[#C89F53] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2z" />
-            </svg>
-            <hr className="w-12 border-[#C89F53]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="text-[#C89F53] font-bold text-xs tracking-widest uppercase mb-4 block drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              NOSSO PROPÓSITO
+            </span>
+            
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
+              <span className="text-white">Conectamos<br/>histórias,</span><br/>
+              <span className="text-[#C89F53]">valorizamos<br/>origens.</span>
+            </h2>
+            
+            <div className="flex items-center gap-4 mb-6">
+              <hr className="w-12 border-[#C89F53]" />
+              <svg className="w-5 h-5 text-[#C89F53] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22V10M12 10C8.686 10 6 7.314 6 4c0 0 3.5 0 6 3.5C14.5 4 18 4 18 4c0 3.314-2.686 6-6 6zM12 16c-2.5 0-4.5-2-4.5-4.5 0 0 2 0 4.5 2z" />
+              </svg>
+              <hr className="w-12 border-[#C89F53]" />
+            </div>
+
+            <p className="text-base md:text-lg text-white font-medium mb-10 leading-relaxed max-w-lg drop-shadow-[0_3px_5px_rgba(0,0,0,0.9)]">
+              O Raiz do Agora dá voz aos produtores de cafés especiais do Sul de Minas, valorizando suas histórias, tradições e o cuidado em cada xícara.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all shadow-lg">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                CONHEÇA OS PRODUTORES
+              </a>
+            </div>
           </div>
 
-          <p className="text-base md:text-lg text-white font-medium mb-10 leading-relaxed max-w-lg drop-shadow-[0_3px_5px_rgba(0,0,0,0.9)]">
-            O Raiz do Agora dá voz aos produtores de cafés especiais do Sul de Minas, valorizando suas histórias, tradições e o cuidado em cada xícara.
-          </p>
-          
-          <div className="flex flex-wrap gap-4">
-            <a href="#produtores" className="inline-flex items-center gap-2 bg-[#2D4A33] text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-[#C89F53] hover:text-[#1B2F20] transition-all shadow-lg">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-              CONHEÇA OS PRODUTORES
-            </a>
-            <a href="#sobre" className="inline-flex items-center gap-2 border border-white text-white px-6 py-3 rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-white hover:text-[#1B2F20] transition-all bg-black/20 shadow-lg">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              ASSISTA AO VÍDEO
-            </a>
+          {/* VÍDEO DO YOUTUBE AQUI */}
+          <div className="w-full relative aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-[#C89F53]/30">
+            <iframe 
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/ArNLqqUDjOI?rel=0&modestbranding=1" 
+              title="Apresentação Raiz do Agora" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
 
       {/* BARRA FLUTUANTE INFORMATIVA */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-16 mb-24">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-20 -mt-16 mb-24 hidden lg:block">
         <div className="bg-[#F4EFE8] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-[#e1d5c1] p-2">
           
           <div className="p-6 flex flex-col xl:flex-row items-center gap-4 text-center xl:text-left">
