@@ -16,7 +16,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535999349440?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.", 
     link_instagram: "https://www.instagram.com/cafeventuras/",
     imagem_produto: "/venturas.png",
-    link_video: "https://youtu.be/Cn3U1KPRz98" 
+    link_video: "https://youtu.be/Dho73jaOOV4" 
   },
   {
     id: 2,
@@ -85,14 +85,14 @@ const produtores = [
     localizacao_texto: "Fazenda Viaduto • Muzambinho/MG",
     coordenadas: "-21.355556,-46.483417", 
     historia: "A Fazenda Viaduto é o berço do Café Benassi. Aproveitando a altitude e o terroir privilegiado da região, Rogério cultiva grãos que passam por maturação lenta, entregando uma doçura natural e um aroma que invade todo o ambiente.",
-    link_whatsapp: "https://w.app/waxb0y", // ATUALIZADO AQUI
+    link_whatsapp: "https://w.app/waxb0y",
     link_instagram: "https://www.instagram.com/cafebenassi/",
     imagem_produto: "/benassi.png",
     link_video: "https://youtu.be/JWXh4uC4luM" 
   },
   {
     id: 8,
-    nome_produtor: "Suzana Santos Passos",
+    nome_produtor: "Armando Santos (SUZANA)",
     nome_produto: "Maturasso",
     localizacao_texto: "Fazenda São Domingos • Muzambinho/MG",
     coordenadas: "-21.354778,-46.462972", 
@@ -172,7 +172,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535998900972?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/lalatocafesespeciais/",
     imagem_produto: "/lalato.png",
-    link_video: "https://youtu.be/4YrTfW2re_M" 
+    link_video: "https://youtu.be/v8cGrk78YMc" 
   },
   {
     id: 15,
@@ -205,7 +205,7 @@ const listaPatrocinadores = [
 ];
 
 const listaApoiadores = [
-  { id: 7, nome: "IFSULDEMINAS", logo_url: "/patrocinadores/logo_if.jpg" },
+  { id: 7, nome: "IFSULDEMINAS", logo_url: "/patrocinadores/logo-campus-muzambinho.jpg" },
   { id: 9, nome: "SPR Muzambinho", logo_url: "/patrocinadores/spr_muz.jpg" },
   { id: 14, nome: "FAEMG SENAR", logo_url: "/patrocinadores/faemg_senar.jpg" },
   { id: 15, nome: "Maratona FAEMG", logo_url: "/patrocinadores/maratona_faemg.jpg" }
@@ -357,7 +357,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SEÇÃO SOBRE O PROJETO (AGORA COM O VÍDEO NO LUGAR CERTO) */}
+      {/* SEÇÃO SOBRE O PROJETO */}
       <section id="sobre" className="max-w-7xl mx-auto px-6 md:px-12 py-10 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 block">
@@ -379,7 +379,6 @@ export default function Home() {
           </a>
         </div>
         
-        {/* AQUI ESTÁ O VÍDEO DO YOUTUBE SUBSTITUINDO A IMAGEM DOS GRÃOS */}
         <div className="relative rounded-3xl overflow-hidden aspect-video shadow-xl border border-[#eaddcf]">
           <iframe 
             className="absolute inset-0 w-full h-full"
@@ -411,8 +410,11 @@ export default function Home() {
               const view = visualizacaoPainel[produtor.id] || 'video'; 
 
               return (
-                <div key={produtor.id} className="bg-white rounded-3xl shadow-sm border border-[#eaddcf] overflow-hidden">
-                  
+                <div 
+                  key={produtor.id} 
+                  id={`produtor-${produtor.id}`} 
+                  className="bg-white rounded-3xl shadow-sm border border-[#eaddcf] overflow-hidden scroll-mt-32"
+                >
                   <div className="flex flex-col lg:flex-row">
                     
                     <div className="w-full lg:w-[35%] bg-gray-900 relative min-h-[300px] lg:min-h-full">
@@ -565,6 +567,7 @@ export default function Home() {
           </div>
 
           {/* Apoiadores */}
+         {/* Apoiadores */}
           <div>
             <div className="flex items-center justify-center gap-4 mb-12">
               <hr className="w-16 md:w-32 border-[#B89247]" />
@@ -579,7 +582,12 @@ export default function Home() {
               {listaApoiadores.map((apoiador) => (
                 <div key={apoiador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-1 md:p-2 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all h-[140px] md:h-[160px]">
                   <div className="h-full w-full flex items-center justify-center">
-                    <img src={apoiador.logo_url} alt={apoiador.nome} className="max-h-full max-w-[95%] object-contain mix-blend-multiply" />
+                    <img 
+                      src={apoiador.logo_url} 
+                      alt={apoiador.nome} 
+                      /* Aqui está a regrinha que diminui apenas a logo do IF (ID 7) */
+                      className={`object-contain mix-blend-multiply ${apoiador.id === 7 ? 'max-h-[65%] max-w-[75%]' : 'max-h-full max-w-[95%]'}`} 
+                    />
                   </div>
                 </div>
               ))}
