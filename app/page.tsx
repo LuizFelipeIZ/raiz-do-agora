@@ -92,7 +92,7 @@ const produtores = [
   },
   {
     id: 8,
-    nome_produtor: "Armando Santos (SUZANA)",
+    nome_produtor: "Suzana Santos Passos",
     nome_produto: "Maturasso",
     localizacao_texto: "Fazenda São Domingos • Muzambinho/MG",
     coordenadas: "-21.354778,-46.462972", 
