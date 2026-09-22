@@ -56,11 +56,11 @@ const produtores = [
   },
   {
     id: 13, // 5. Manjorê
-    nome_produtor: "Paulo José e Edna Sotero",
+    nome_produtor: "Paulo José e Selma Sotero",
     nome_produto: "Manjorê Café",
     localizacao_texto: "Sítio Cachoeira do Cambuí • Muzambinho/MG",
     coordenadas: "-21.391722,-46.437389", 
-    historia: "Cercados pelas águas do Sítio Cachoeira do Cambuí, Paulo e Edna desenvolveram o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
+    historia: "Cercados pelas águas do Sítio Cachoeira do Cambuí, Paulo e Selma desenvolveram o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
     link_whatsapp: "https://wa.me/5535991966264?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/manjore.cafe.especial/",
     imagem_produto: "/manjore.png",
@@ -124,7 +124,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/minasgoldencafe/",
     imagem_produto: "/minas_golden2.png", 
-    link_video: "https://youtu.be/FKCoRDVWCL4" 
+    link_video: "https://youtu.be/O7Cy1Hr-2as" 
   },
   {
     id: 6, // 11. Imolive
@@ -136,7 +136,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/imolivecafe/",
     imagem_produto: "/imolive.png",
-    link_video: "https://youtu.be/9eNI19iDNvw" 
+    link_video: "https://youtu.be/EH7VFxraRC4" 
   },
   {
     id: 2, // 12. Família Ferreira
@@ -201,7 +201,8 @@ const listaPatrocinadores = [
   { id: 8, nome: "Cometa Tintas", logo_url: "/patrocinadores/cometa.jpg" },
   { id: 10, nome: "Soma Jr.", logo_url: "/patrocinadores/somajr.jpg" },
   { id: 12, nome: "COOPAM", logo_url: "/patrocinadores/coopam.jpg" },
-  { id: 13, nome: "Agrifort Jr.", logo_url: "/patrocinadores/agrifort.jpg" }
+  { id: 13, nome: "Agrifort Jr.", logo_url: "/patrocinadores/agrifort.jpg" },
+  { id: 16, nome: "Verdeplan", logo_url: "/patrocinadores/verdeplan.jpeg" }
 ];
 
 const listaApoiadores = [
@@ -442,7 +443,6 @@ export default function Home() {
                       <span className="inline-block bg-[#eaf0eb] text-[#1B2F20] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm mb-4 self-start">
                         Produtor
                       </span>
-                      {/* AQUI FOI ALTERADO PARA TEXT-2XL MD:TEXT-3XL PARA ACOMODAR OS NOMES MAIORES */}
                       <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#1B2F20] leading-tight mb-2">
                         {produtor.nome_produtor}
                       </h3>
@@ -556,11 +556,17 @@ export default function Home() {
               <hr className="w-16 md:w-32 border-[#B89247]" />
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+            {/* Mudamos de grid para flex wrap para centralizar a última linha com 11 itens */}
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               {listaPatrocinadores.map((patrocinador) => (
-                <div key={patrocinador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-1 md:p-2 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all text-center h-[140px] md:h-[160px]">
+                <div key={patrocinador.id} className="bg-white rounded-2xl shadow-sm border border-[#eaddcf] p-1 md:p-2 flex flex-col items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all text-center h-[140px] md:h-[160px] w-[calc(50%-8px)] md:w-[calc(33.333%-16px)] lg:w-[calc(20%-19.2px)]">
                   <div className="h-full w-full flex items-center justify-center">
-                    <img src={patrocinador.logo_url} alt={patrocinador.nome} className="max-h-full max-w-[95%] object-contain mix-blend-multiply" />
+                    <img 
+                      src={patrocinador.logo_url} 
+                      alt={patrocinador.nome} 
+                      /* Regrinha para a logo horizontal da Verdeplan respirar nas laterais */
+                      className={`object-contain mix-blend-multiply ${patrocinador.id === 16 ? 'max-w-[60%]' : 'max-h-full max-w-[95%]'}`} 
+                    />
                   </div>
                 </div>
               ))}
