@@ -7,91 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 // ==========================================
 const produtores = [
   {
-    id: 1,
-    nome_produtor: "Naiara de Souza Ventura",
-    nome_produto: "Ventura's Cafés Especiais",
-    localizacao_texto: "Sítio Ribeirãozinho • Muzambinho/MG",
-    coordenadas: "-21.359639,-46.448333", 
-    historia: "Comandando o Sítio Ribeirãozinho, Naiara uniu a delicadeza do toque feminino à força do trabalho no campo. Seus microlotes destacam notas frutadas, reflexo de uma colheita 100% seletiva e muito amor pelas terras de Muzambinho.",
-    link_whatsapp: "https://wa.me/5535999349440?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.", 
-    link_instagram: "https://www.instagram.com/cafeventuras/",
-    imagem_produto: "/venturas.png",
-    link_video: "https://youtu.be/Dho73jaOOV4" 
-  },
-  {
-    id: 2,
-    nome_produtor: "Elias Antônio Ferreira Junior",
-    nome_produto: "Familia Ferreira Cafés especiais",
-    localizacao_texto: "Sítio Bela Vista • Muzambinho/MG",
-    coordenadas: "-21.391851,-46.437372", 
-    historia: "A tradição da Família Ferreira corre nas veias de Elias. Passado de geração em geração, o cultivo no Sítio Bela Vista alia o conhecimento dos antigos com novas técnicas de pós-colheita, resultando em uma xícara clássica, encorpada e inesquecível.",
-    link_whatsapp: "https://wa.me/5535998637490?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/familia_ferreira_cafes/",
-    imagem_produto: "/familia_ferreira.png",
-    link_video: "https://youtu.be/pqVZRCzwPts" 
-  },
-  {
-    id: 3,
-    nome_produtor: "Valdirene Aparecida de Souza",
-    nome_produto: "Grãos do chico",
-    localizacao_texto: "Serrinha dos Cristais • Muzambinho/MG",
-    coordenadas: "-21.407444,-46.513748", 
-    historia: "Na Serrinha dos Cristais, Valdirene trata o café como uma verdadeira obra de arte da natureza. O foco do Grãos do Chico é a agricultura sustentável e a preservação ambiental, o que traz para a bebida um frescor único e notas florais.",
-    link_whatsapp: "https://wa.me/5535999581140?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/graosdochico/",
-    imagem_produto: "/graos_do_chico.png",
-    link_video: "https://youtu.be/uAu6AOjiddI" 
-  },
-  {
-    id: 4,
-    nome_produtor: "Thales da Silva Rossi",
-    nome_produto: "Cafejrossi",
-    localizacao_texto: "Sítio Guatapará • Muzambinho/MG",
-    coordenadas: "-21.334944,-46.528750", 
-    historia: "Trazendo inovação para o Sítio Guatapará, Thales representa a nova geração de cafeicultores apaixonados. O Café JRossi passa por processos cuidadosos de secagem, criando um perfil de bebida exótica, doce e com acidez brilhante.",
-    link_whatsapp: "https://wa.me/5535988346217?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/cafejrossi/",
-    imagem_produto: "/jrossi.png",
-    link_video: "https://youtu.be/KE1vK8uK85I" 
-  },
-  {
-    id: 5,
-    nome_produtor: "Selma Salomão Bueno dos Reis",
-    nome_produto: "Cafebellamaria",
-    localizacao_texto: "Sítio Pinhal • Muzambinho/MG",
-    coordenadas: "-21.389833,-46.520000", 
-    historia: "No coração do Sítio Pinhal, Selma transforma trabalho duro em poesia líquida. O Café Bella Maria é fruto de uma seleção rigorosa dos melhores grãos da propriedade, oferecendo um café aconchegante, com notas de chocolate e caramelo.",
-    link_whatsapp: "https://wa.me/5535991535704?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/cafebellamaria/",
-    imagem_produto: "/bella_maria.png",
-    link_video: "https://youtu.be/EMjOTPjlZCw" 
-  },
-  {
-    id: 6,
-    nome_produtor: "Joana Caroline D'arc de Oliveira",
-    nome_produto: "Imolive café",
-    localizacao_texto: "Sítio Gonçalves • Muzambinho/MG",
-    coordenadas: "-21.346278,-46.553639", 
-    historia: "O Imolive Café nasceu da força e determinação de Joana no Sítio Gonçalves. Cada etapa, da florada à secagem em terreiro, é acompanhada de perto, resultando em um café limpo, equilibrado e que conquista paladares exigentes.",
-    link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/imolivecafe/",
-    imagem_produto: "/imolive.png",
-    link_video: "https://youtu.be/EH7VFxraRC4" 
-  },
-  {
-    id: 7,
-    nome_produtor: "Rogério Maciel Carvalho Benassi",
-    nome_produto: "Café Benassi",
-    localizacao_texto: "Fazenda Viaduto • Muzambinho/MG",
-    coordenadas: "-21.355556,-46.483417", 
-    historia: "A Fazenda Viaduto é o berço do Café Benassi. Aproveitando a altitude e o terroir privilegiado da região, Rogério cultiva grãos que passam por maturação lenta, entregando uma doçura natural e um aroma que invade todo o ambiente.",
-    link_whatsapp: "https://w.app/waxb0y",
-    link_instagram: "https://www.instagram.com/cafebenassi/",
-    imagem_produto: "/benassi.png",
-    link_video: "https://youtu.be/JWXh4uC4luM" 
-  },
-  {
-    id: 8,
+    id: 8, // 1. Maturasso
     nome_produtor: "Suzana Santos Passos",
     nome_produto: "Maturasso",
     localizacao_texto: "Fazenda São Domingos • Muzambinho/MG",
@@ -103,31 +19,19 @@ const produtores = [
     link_video: "https://youtu.be/-kECMO-89iE" 
   },
   {
-    id: 9,
-    nome_produtor: "Renata Maria Martins Armelin",
-    nome_produto: "Dom Aurelio",
-    localizacao_texto: "Sítio Bela Vista • Muzambinho/MG",
-    coordenadas: "-21.449472,-46.485194", 
-    historia: "Renata transformou o Sítio Bela Vista na morada do Dom Aurélio. Com um olhar clínico para a qualidade, seus grãos são selecionados rigorosamente e secos lentamente, criando um microlote sofisticado, aveludado e cheio de personalidade.",
-    link_whatsapp: "https://wa.me/5535992208080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/cafedomaurelio/",
-    imagem_produto: "/dom_aurelio.png",
-    link_video: "https://youtu.be/wzT-Enkle_Q" 
+    id: 4, // 2. JRossi
+    nome_produtor: "Alisson e Thales Rossi",
+    nome_produto: "Cafejrossi",
+    localizacao_texto: "Sítio Guatapará • Muzambinho/MG",
+    coordenadas: "-21.334944,-46.528750", 
+    historia: "Trabalhando lado a lado no Sítio Guatapará, pai e filho unem a sabedoria da tradição com a energia da inovação. Alisson e Thales representam uma geração apaixonada, e o Café JRossi reflete isso através de processos cuidadosos de secagem, criando uma bebida doce e com acidez brilhante.",
+    link_whatsapp: "https://wa.me/5535988346217?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/cafejrossi/",
+    imagem_produto: "/jrossi.png",
+    link_video: "https://youtu.be/KE1vK8uK85I" 
   },
   {
-    id: 10,
-    nome_produtor: "Silmara Aparecida Anderson",
-    nome_produto: "Florisa",
-    localizacao_texto: "Sítio Belém • Muzambinho/MG",
-    coordenadas: "-21.431567,-46.571315", 
-    historia: "No Sítio Belém, Silmara cultiva o Florisa com o coração. Cuidando de cada detalhe, desde o manejo no campo até a precisão da torra, ela oferece um café que é um abraço em forma de bebida, destacando notas doces e corpo cremoso.",
-    link_whatsapp: "https://wa.me/5535999395080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/cafe_florisa/",
-    imagem_produto: "/florisa2.png", 
-    link_video: "https://youtu.be/MHrm0kG28jI" 
-  },
-  {
-    id: 11,
+    id: 11, // 3. Espoir
     nome_produtor: "Juliana Magalhães",
     nome_produto: "Café Espoir",
     localizacao_texto: "Sítio Retiro • Muzambinho/MG",
@@ -139,31 +43,67 @@ const produtores = [
     link_video: "https://youtu.be/V2KB5bWVl0c" 
   },
   {
-    id: 12,
-    nome_produtor: "Micheli Cíndel Escudero",
-    nome_produto: "Minas Golden Café",
-    localizacao_texto: "Sítio Minas Golden • Muzambinho/MG",
-    coordenadas: "-21.355361,-46.604472", 
-    historia: "Com as mãos sujas de terra e o peito cheio de orgulho, Micheli faz do Minas Golden uma joia rara. Este café reflete toda a maestria da cafeicultura de montanha, entregando uma acidez equilibrada, cítrica e um final super prolongado.",
-    link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
-    link_instagram: "https://www.instagram.com/minasgoldencafe/",
-    imagem_produto: "/minas_golden2.png", 
-    link_video: "https://youtu.be/O7Cy1Hr-2as" 
+    id: 1, // 4. Ventura's
+    nome_produtor: "Naiara de Souza Ventura",
+    nome_produto: "Ventura's Cafés Especiais",
+    localizacao_texto: "Sítio Ribeirãozinho • Muzambinho/MG",
+    coordenadas: "-21.359639,-46.448333", 
+    historia: "Comandando o Sítio Ribeirãozinho, Naiara uniu a delicadeza do toque feminino à força do trabalho no campo. Seus microlotes destacam notas frutadas, reflexo de uma colheita 100% seletiva e muito amor pelas terras de Muzambinho.",
+    link_whatsapp: "https://wa.me/5535999349440?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.", 
+    link_instagram: "https://www.instagram.com/cafeventuras/",
+    imagem_produto: "/venturas.png",
+    link_video: "https://youtu.be/Dho73jaOOV4" 
   },
   {
-    id: 13,
-    nome_produtor: "Paulo José Sotero",
+    id: 13, // 5. Manjorê
+    nome_produtor: "Paulo José e Edna Sotero",
     nome_produto: "Manjorê Café",
     localizacao_texto: "Sítio Cachoeira do Cambuí • Muzambinho/MG",
     coordenadas: "-21.391722,-46.437389", 
-    historia: "Cercado pelas águas do Sítio Cachoeira do Cambuí, Paulo desenvolveu o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e dodoçura vibrante.",
+    historia: "Cercados pelas águas do Sítio Cachoeira do Cambuí, Paulo e Edna desenvolveram o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
     link_whatsapp: "https://wa.me/5535991966264?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/manjore.cafe.especial/",
     imagem_produto: "/manjore.png",
     link_video: "https://youtu.be/j140q1i8j9A" 
   },
   {
-    id: 14,
+    id: 3, // 6. Grãos do Chico
+    nome_produtor: "Valdirene Aparecida de Souza",
+    nome_produto: "Grãos do chico",
+    localizacao_texto: "Serrinha dos Cristais • Muzambinho/MG",
+    coordenadas: "-21.407444,-46.513748", 
+    historia: "Na Serrinha dos Cristais, Valdirene trata o café como uma verdadeira obra de arte da natureza. O foco do Grãos do Chico é a agricultura sustentável e a preservação ambiental, o que traz para a bebida um frescor único e notas florais.",
+    link_whatsapp: "https://wa.me/5535999581140?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/graosdochico/",
+    imagem_produto: "/graos_do_chico.png",
+    link_video: "https://youtu.be/uAu6AOjiddI" 
+  },
+  {
+    id: 7, // 7. Benassi
+    nome_produtor: "Rogério Maciel Carvalho Benassi",
+    nome_produto: "Café Benassi",
+    localizacao_texto: "Fazenda Viaduto • Muzambinho/MG",
+    coordenadas: "-21.355556,-46.483417", 
+    historia: "A Fazenda Viaduto é o berço do Café Benassi. Aproveitando a altitude e o terroir privilegiado da região, Rogério cultiva grãos que passam por maturação lenta, entregando uma doçura natural e um aroma que invade todo o ambiente.",
+    link_whatsapp: "https://w.app/waxb0y",
+    link_instagram: "https://www.instagram.com/cafebenassi/",
+    imagem_produto: "/benassi.png",
+    link_video: "https://youtu.be/JWXh4uC4luM" 
+  },
+  {
+    id: 5, // 8. Bella Maria
+    nome_produtor: "Selma Salomão Bueno dos Reis",
+    nome_produto: "Cafebellamaria",
+    localizacao_texto: "Sítio Pinhal • Muzambinho/MG",
+    coordenadas: "-21.389833,-46.520000", 
+    historia: "No coração do Sítio Pinhal, Selma transforma trabalho duro em poesia líquida. O Café Bella Maria é fruto de uma seleção rigorosa dos melhores grãos da propriedade, oferecendo um café aconchegante, com notas de chocolate e caramelo.",
+    link_whatsapp: "https://wa.me/5535991535704?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/cafebellamaria/",
+    imagem_produto: "/bella_maria.png",
+    link_video: "https://youtu.be/EMjOTPjlZCw" 
+  },
+  {
+    id: 14, // 9. Lalato
     nome_produtor: "Tatiana Cardoso de Castro",
     nome_produto: "Lalato",
     localizacao_texto: "Sítio Morro Preto • Muzambinho/MG",
@@ -175,7 +115,67 @@ const produtores = [
     link_video: "https://youtu.be/v8cGrk78YMc" 
   },
   {
-    id: 15,
+    id: 12, // 10. Minas Golden
+    nome_produtor: "Erivelton e Michele",
+    nome_produto: "Minas Golden Café",
+    localizacao_texto: "Sítio Minas Golden • Muzambinho/MG",
+    coordenadas: "-21.355361,-46.604472", 
+    historia: "Com as mãos sujas de terra e o peito cheio de orgulho, Erivelton e Michele fazem do Minas Golden uma joia rara. Este café reflete toda a maestria da cafeicultura de montanha, entregando uma acidez equilibrada, cítrica e um final super prolongado.",
+    link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/minasgoldencafe/",
+    imagem_produto: "/minas_golden2.png", 
+    link_video: "https://youtu.be/O7Cy1Hr-2as" 
+  },
+  {
+    id: 6, // 11. Imolive
+    nome_produtor: "Charles, Joana e Tiago Oliveira",
+    nome_produto: "Imolive café",
+    localizacao_texto: "Sítio Gonçalves • Muzambinho/MG",
+    coordenadas: "-21.346278,-46.553639", 
+    historia: "O Imolive Café nasceu da força e determinação de Charles, Joana e Tiago no Sítio Gonçalves. Cada etapa, da florada à secagem em terreiro, é acompanhada de perto, resultando em um café limpo, equilibrado e que conquista paladares exigentes.",
+    link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/imolivecafe/",
+    imagem_produto: "/imolive.png",
+    link_video: "https://youtu.be/EH7VFxraRC4" 
+  },
+  {
+    id: 2, // 12. Família Ferreira
+    nome_produtor: "Elias Antônio Ferreira Junior",
+    nome_produto: "Familia Ferreira Cafés especiais",
+    localizacao_texto: "Sítio Bela Vista • Muzambinho/MG",
+    coordenadas: "-21.391851,-46.437372", 
+    historia: "A tradição da Família Ferreira corre nas veias de Elias. Passado de geração em geração, o cultivo no Sítio Bela Vista alia o conhecimento dos antigos com novas técnicas de pós-colheita, resultando em uma xícara clássica, encorpada e inesquecível.",
+    link_whatsapp: "https://wa.me/5535998637490?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/familia_ferreira_cafes/",
+    imagem_produto: "/familia_ferreira.png",
+    link_video: "https://youtu.be/pqVZRCzwPts" 
+  },
+  {
+    id: 10, // 13. Florisa
+    nome_produtor: "Silmara Aparecida Anderson",
+    nome_produto: "Florisa",
+    localizacao_texto: "Sítio Belém • Muzambinho/MG",
+    coordenadas: "-21.431567,-46.571315", 
+    historia: "No Sítio Belém, Silmara cultiva o Florisa com o coração. Cuidando de cada detalhe, desde o manejo no campo até a precisão da torra, ela oferece um café que é um abraço em forma de bebida, destacando notas doces e corpo cremoso.",
+    link_whatsapp: "https://wa.me/5535999395080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/cafe_florisa/",
+    imagem_produto: "/florisa2.png", 
+    link_video: "https://youtu.be/MHrm0kG28jI" 
+  },
+  {
+    id: 9, // 14. Dom Aurélio
+    nome_produtor: "Renata Maria Martins Armelin",
+    nome_produto: "Dom Aurelio",
+    localizacao_texto: "Sítio Bela Vista • Muzambinho/MG",
+    coordenadas: "-21.449472,-46.485194", 
+    historia: "Renata transformou o Sítio Bela Vista na morada do Dom Aurélio. Com um olhar clínico para a qualidade, seus grãos são selecionados rigorosamente e secos lentamente, criando um microlote sofisticado, aveludado e cheio de personalidade.",
+    link_whatsapp: "https://wa.me/5535992208080?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
+    link_instagram: "https://www.instagram.com/cafedomaurelio/",
+    imagem_produto: "/dom_aurelio.png",
+    link_video: "https://youtu.be/wzT-Enkle_Q" 
+  },
+  {
+    id: 15, // 15. Maria Cecília
     nome_produtor: "Paula Santini",
     nome_produto: "Maria Cecilia",
     localizacao_texto: "Sítio Brumado • Muzambinho/MG",
@@ -442,7 +442,8 @@ export default function Home() {
                       <span className="inline-block bg-[#eaf0eb] text-[#1B2F20] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm mb-4 self-start">
                         Produtor
                       </span>
-                      <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#1B2F20] leading-tight mb-2">
+                      {/* AQUI FOI ALTERADO PARA TEXT-2XL MD:TEXT-3XL PARA ACOMODAR OS NOMES MAIORES */}
+                      <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#1B2F20] leading-tight mb-2">
                         {produtor.nome_produtor}
                       </h3>
                       <p className="text-sm text-gray-500 font-medium flex items-center gap-2 mb-6">
@@ -567,7 +568,6 @@ export default function Home() {
           </div>
 
           {/* Apoiadores */}
-         {/* Apoiadores */}
           <div>
             <div className="flex items-center justify-center gap-4 mb-12">
               <hr className="w-16 md:w-32 border-[#B89247]" />
