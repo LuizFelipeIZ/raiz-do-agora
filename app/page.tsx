@@ -56,7 +56,7 @@ const produtores = [
   },
   {
     id: 13, // 5. Manjorê
-    nome_produtor: "Paulo José e Selma Sotero",
+    nome_produtor: "Paulo José e Edna Sotero",
     nome_produto: "Manjorê Café",
     localizacao_texto: "Sítio Cachoeira do Cambuí • Muzambinho/MG",
     coordenadas: "-21.391722,-46.437389", 
