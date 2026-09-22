@@ -60,7 +60,7 @@ const produtores = [
     nome_produto: "Manjorê Café",
     localizacao_texto: "Sítio Cachoeira do Cambuí • Muzambinho/MG",
     coordenadas: "-21.391722,-46.437389", 
-    historia: "Cercados pelas águas do Sítio Cachoeira do Cambuí, Paulo e Selma desenvolveram o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
+    historia: "Cercados pelas águas do Sítio Cachoeira do Cambuí, Paulo e Edna desenvolveram o Manjorê. A união de um microclima perfeito com um rigoroso processo de seleção natural garante grãos excepcionais, com aroma levemente floral e doçura vibrante.",
     link_whatsapp: "https://wa.me/5535991966264?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/manjore.cafe.especial/",
     imagem_produto: "/manjore.png",
