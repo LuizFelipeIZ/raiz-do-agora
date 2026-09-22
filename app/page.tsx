@@ -565,7 +565,7 @@ export default function Home() {
                       src={patrocinador.logo_url} 
                       alt={patrocinador.nome} 
                       /* Regrinha para a logo horizontal da Verdeplan respirar nas laterais */
-                      className={`object-contain mix-blend-multiply ${patrocinador.id === 16 ? 'max-w-[70%]' : 'max-h-full max-w-[95%]'}`} 
+                      className={`object-contain mix-blend-multiply ${patrocinador.id === 16 ? 'max-w-[60%]' : 'max-h-full max-w-[95%]'}`} 
                     />
                   </div>
                 </div>
