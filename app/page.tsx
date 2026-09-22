@@ -124,7 +124,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535992702134?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/minasgoldencafe/",
     imagem_produto: "/minas_golden2.png", 
-    link_video: "https://youtu.be/O7Cy1Hr-2as" 
+    link_video: "https://youtu.be/FKCoRDVWCL4" 
   },
   {
     id: 6, // 11. Imolive
@@ -136,7 +136,7 @@ const produtores = [
     link_whatsapp: "https://wa.me/5535997063156?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/imolivecafe/",
     imagem_produto: "/imolive.png",
-    link_video: "https://youtu.be/EH7VFxraRC4" 
+    link_video: "https://youtu.be/9eNI19iDNvw" 
   },
   {
     id: 2, // 12. Família Ferreira
