@@ -96,7 +96,7 @@ const produtores = [
     nome_produto: "Cafebellamaria",
     localizacao_texto: "Sítio Pinhal • Muzambinho/MG",
     coordenadas: "-21.389833,-46.520000", 
-    historia: "No coração do Sítio Pinhal, Selma transforma trabalho duro em poesia líquida. O Café Bella Maria é fruto de uma seleção rigorosa dos melhores grãos da propriedade, oferecendo um café aconchegante, com notas de chocolate e caramelo.",
+    historia: "No coração do Sítio Pinhal, Selma transformou trabalho duro em poesia líquida. O Café Bella Maria é fruto de uma seleção rigorosa dos melhores grãos da propriedade, oferecendo um café aconchegante, com notas de chocolate e caramelo.",
     link_whatsapp: "https://wa.me/5535991535704?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/cafebellamaria/",
     imagem_produto: "/bella_maria.png",
@@ -144,7 +144,7 @@ const produtores = [
     nome_produto: "Familia Ferreira Cafés especiais",
     localizacao_texto: "Sítio Bela Vista • Muzambinho/MG",
     coordenadas: "-21.391851,-46.437372", 
-    historia: "A tradição da Família Ferreira corre nas veias de Elias. Passado de geração em geração, o cultivo no Sítio Bela Vista alia o conhecimento dos antigos com novas técnicas de pós-colheita, resultando em uma xícara clássica, encorpada e inesquecível.",
+    historia: "A tradição da Família Ferreira corre nas veias de Elias. Passado de geração em geração, o cultivo no Sítio Bela Vista alia o conhecimento dos antigos com novas técnicas de pós-colheita, resultando em uma xícara clássica, encorpada e inesquובהquecível.",
     link_whatsapp: "https://wa.me/5535998637490?text=Ol%C3%A1!%20Vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.",
     link_instagram: "https://www.instagram.com/familia_ferreira_cafes/",
     imagem_produto: "/familia_ferreira.png",
@@ -523,8 +523,8 @@ export default function Home() {
 
       {/* SEÇÃO PATROCINADORES E APOIADORES (INTRO) */}
       <section className="relative py-24 md:py-32 border-t-4 border-[#B89247] overflow-hidden flex items-center justify-center min-h-[400px]">
-        <div className="absolute inset-0 bg-[url('/12.jpg')] bg-cover bg-right md:bg-[center_right]"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-[url('/foto_1.jpeg')] bg-cover bg-center bg-no-repeat"></div>
+        <div className="absolute inset-0 bg-[#0B150E]/70"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
           <span className="text-[#B89247] font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
@@ -576,7 +576,7 @@ export default function Home() {
           {/* Apoiadores */}
           <div>
             <div className="flex items-center justify-center gap-4 mb-12">
-              <hr className="w -16 md:w-32 border-[#B89247]" />
+              <hr className="w-16 md:w-32 border-[#B89247]" />
               <span className="text-[#1B2F20] font-bold text-sm md:text-base tracking-widest uppercase flex items-center gap-2">
                 <svg className="w-5 h-5 text-[#B89247]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                 APOIADORES
